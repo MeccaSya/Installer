@@ -1,0 +1,58 @@
+<ion-view title="Downstream Information" id="page4">
+  <ion-content padding="true" class="has-header">
+  <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+  	<div class="list" ng-repeat="ds in dsInfo">
+
+      <div class="item">
+        Frequency (Hz)
+        <span class="item-note">
+          {{ds.frequency}}
+        </span>
+      </div>
+      <div class="item">
+          Modulation
+        <span class="item-note">
+          {{ds.modulation}}
+        </span>
+      </div>
+      <div class="item">
+         Signal strength (dBmV)
+        <span class="item-note">
+          {{ds.signalStrength}}
+        </span>
+      </div>
+      <div class="item">
+        Signal noise ratio (dB)
+        <span class="item-note">
+          {{ds.snr}}
+        </span>
+      </div>
+      <div class="item">
+        Channel ID
+        <span class="item-note">
+          {{ds.channelId}}
+        </span>
+      </div>
+      <div class="item">
+        Octets
+        <span class="item-note">
+          {{ds.dsoctets}}
+        </span>
+      </div>
+      <div class="item">
+        Correcteds
+        <span class="item-note">
+          {{ds.correcteds}}
+        </span>
+      </div>
+      <div class="item">
+        Uncorrect
+        <span class="item-note">
+          {{ds.uncorrect}}
+        </span>
+      </div>
+      <br>
+    
+    </div>
+  </ion-content>
+</ion-view>

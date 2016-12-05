@@ -1,0 +1,29 @@
+<ion-view title="Wi-Fi Status" id="page6">
+  <ion-content padding="true" class="has-header">
+  <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+  <div class="list">
+      <div class="item item-divider">
+        2.4G Wi-Fi SSID
+      </div>
+      <div class="item" ng-repeat="ssid in ssid2">SSID: {{ssid.ssidName}}
+      <span class="item-note" style='{{((ssid.enable | uppercase) == "ON")?"color:green":""}}'>
+          {{ssid.enable}}
+        </span>
+      <div>Password: {{ssid.passPhrase}}</div>
+      </div>
+  </div>
+      
+  <div class="list">
+      <div class="item item-divider">
+        5G Wi-Fi SSID
+      </div>
+      <div class="item" ng-repeat="ssid in ssid5">SSID: {{ssid.ssidName}}
+      <span class="item-note" style='{{((ssid.enable | uppercase) == "ON")?"color:green":""}}'>
+          {{ssid.enable}}
+        </span>
+      <div>Password: {{ssid.passPhrase}}</div>
+      </div>
+  </div>
+
+      </ion-content>
+</ion-view>

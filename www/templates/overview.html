@@ -1,0 +1,38 @@
+<ion-view title="Overview" id="page1">
+  <ion-content padding="true" class="has-header">
+    <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+    <div id="quickInstaller-markdown2" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;padding: 5px;">
+        <strong>Hitron Modem: </strong>  {{modelName}}</p>
+    </div>
+    <div class="list" ng->
+      <div class="item item-divider">
+        Device Information
+      </div>
+      <div class="item">
+        Hardware Version
+        <span class="item-note">
+          {{hwVer}}
+        </span>
+      </div>
+      <div class="item">
+        Software Version
+        <span class="item-note">
+          {{swVer}}
+        </span>
+      </div>
+      <div class="item">
+        Serial Number
+        <span class="item-note">
+          {{sn}}
+        </span>
+      </div>
+      <div class="item">
+        Vender Name
+        <span class="item-note">
+          {{venderName}}
+        </span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,44 @@
+<ion-view title="DOCSIS Status" id="page3">
+  <ion-content padding="true" class="has-header">
+  <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+  <div class="list">
+  <div class="item item-divider">
+        DOCSIS WAN:
+        </div>
+      <div class="item">
+        Network Access:
+        <span class="item-note">
+          {{networkAccess}}
+        </span>
+      </div>
+      <div class="item">
+          IP Address:
+        <span class="item-note">
+          {{IPv4}}
+        </span><br>
+        <span class="item-note">
+          {{IPv6}}
+        </span>
+      </div>
+      <div class="item">
+         Subnet Mask:
+        <span class="item-note">
+          {{mask}}
+        </span>
+      </div>
+      <div class="item">
+        Gateway IP Address:
+        <span class="item-note">
+          {{gatewayIP}}
+        </span>
+      </div>
+      <div class="item">
+        DHCP Lease Time:
+        <span class="item-note">
+          {{dhcpLease}}
+        </span>
+      </div>
+    
+    </div>
+    </ion-content>
+</ion-view>

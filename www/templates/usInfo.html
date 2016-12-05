@@ -1,0 +1,38 @@
+<ion-view title="Upstream Information" id="page5">
+  <ion-content padding="true" class="has-header">
+  	<ion-refresher on-refresh="doRefresh()"></ion-refresher>
+    <div class="list" ng-repeat="us in usInfo">
+      <div class="item">
+        Frequency (Hz)
+        <span class="item-note">
+          {{us.frequency}}
+        </span>
+      </div>
+      <div class="item">
+          Modulation
+        <span class="item-note">
+          {{us.modulationType}}
+        </span>
+      </div>
+      <div class="item">
+         Signal strength (dBmV)
+        <span class="item-note">
+          {{us.signalStrength}}
+        </span>
+      </div>
+      <div class="item">
+        BandWidth (Hz)
+        <span class="item-note">
+          {{us.bandwidth}}
+        </span>
+      </div>
+      <div class="item">
+        Channel ID
+        <span class="item-note">
+          {{us.channelId}}
+        </span>
+      </div>
+    
+    </div>
+  </ion-content>
+</ion-view>

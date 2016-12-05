@@ -1,0 +1,68 @@
+<ion-view title="System Information" id="page2">
+  <ion-content padding="true" class="has-header">
+    <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+    <div class="list">
+      <div class="item">
+        System Time
+        <span class="item-note">
+          {{time}}
+        </span>
+      </div>
+      <div class="item">
+          Time Zone
+        <span class="item-note" style="text-align: right;width:60%;text-overflow:ellipsis;overflow: hidden;" >
+          {{timeZone}}
+        </span>
+      </div>
+      <div class="item">
+        Private LAN IP Address
+        <span class="item-note">
+          {{lanIP}}
+        </span>
+      </div>
+      <div class="item">
+        LAN Receiving
+        <span class="item-note">
+          {{lanRecv}}
+        </span>
+      </div>
+      <div class="item">
+        LAN Sending
+        <span class="item-note">
+          {{lanSend}}
+        </span>
+      </div>
+    
+      <div class="item">
+        WAN IP Address
+        <span class="item-note">
+          {{wanIPv4}}
+        </span><br>
+        <span class="item-note">
+          {{wanIPv6}}
+        </span>
+      </div>
+      <div class="item">
+        WAN Receiving
+        <span class="item-note">
+          {{wanRecv}}
+        </span>
+      </div>
+      <div class="item">
+        WAN Sending
+        <span class="item-note">
+          {{wanSend}}
+        </span>
+      </div>
+      <div class="item">
+        WAN DNS
+        <span class="item-note">
+          {{wanDNSv4}}
+        </span><br>
+        <span class="item-note">
+          {{wanDNSv6}}
+        </span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
